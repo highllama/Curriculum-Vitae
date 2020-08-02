@@ -1,0 +1,41 @@
+footer {
+
+    .contactSection {
+        text-align: center;
+        font-size: 4.5em;
+
+        .phoneNumber {
+            font-size: .5em;
+            margin-top: .8em;
+
+            span {
+                margin-left: .4em;
+            }
+        }
+
+        a {
+            margin: 0 .2em;
+            color: #FFF;
+
+
+            &:hover {
+                color: $mainBlue;
+                cursor: pointer;
+                transition: all ease .29s;
+
+            }
+        }
+
+
+
+    }
+}
+
+@media screen and (max-width:765px) {
+
+    footer {
+        .contactSection {
+            font-size: 3.5em;
+        }
+    }
+}

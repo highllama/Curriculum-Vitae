@@ -1,0 +1,71 @@
+#section4 {
+    margin-top: 3em;
+}
+
+.otherProjects {
+
+    margin-top: 5em;
+
+    .secondaryGrid {
+        display: grid;
+        gap: 2.5em;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .secondaryProject {
+        margin-bottom: 4em;
+    }
+
+    .secondaryProjectInfo {
+
+        h3 {
+            font-size: 2em;
+            margin-top: .4em
+        }
+
+        p {
+            margin-top: .6em;
+            font-size: 1em;
+        }
+
+        a {
+            color: $mainBlue;
+
+            &:hover {
+                color: blue;
+            }
+        }
+    }
+
+    .secondaryProjectImage {
+        width: 100%;
+        height: 45vh;
+        overflow-y: scroll;
+
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+
+
+
+        }
+    }
+}
+
+@media screen and (max-width:765px) {
+
+    .otherProjects {
+        .secondaryGrid {
+            grid-template-columns: 1fr;
+
+            .secondaryProjectImage {
+                height: 25vh;
+            }
+        }
+
+    }
+}

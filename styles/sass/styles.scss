@@ -1,0 +1,151 @@
+@import "header";
+@import "section2";
+@import "skillsSection";
+@import "otherProjects";
+@import "contact";
+
+$mainBlue: #0066ff;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  background-color: #000;
+  color: #FFF;
+  scroll-behavior: smooth;
+}
+
+button {
+  background-color: $mainBlue;
+  border: none;
+  border-radius: 25px;
+  padding: .7em 1.5em;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  outline: thin;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: ease all 0.2s;
+    background-color: #fff;
+  }
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.blueText {
+  color: $mainBlue;
+}
+
+.section__Title {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  margin: 1em auto;
+}
+
+#responsiveHeader {
+  display: none;
+}
+
+.raleway700 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+.raleway400 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+
+}
+
+.openSans700 {
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+
+.openSans400 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    justify-content: flex-start;
+  }
+
+  .mainHeader {
+    position: absolute;
+    width: 10em;
+    display: none;
+    right: -15em;
+
+    ul {
+      display: inline;
+    }
+
+    &.displayed {
+      padding-top: 2em;
+      display: block;
+
+      line-height: 300%;
+      position: absolute;
+      width: 10em;
+      height: 100%;
+      top: 0.1em;
+      right: 0;
+      background-color: rgba($color: #000000, $alpha: 0.5);
+      transition: ease all 0.2s;
+    }
+  }
+
+  .bgLeftSide__Description {
+    h1 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 1.8em;
+    }
+  }
+
+  #responsiveHeader {
+    display: initial;
+    padding: 1em 1.3em;
+  }
+
+  .section3,
+  .section4 {
+    flex-direction: column;
+  }
+
+  .section4 {
+
+    .project,
+    .projectInfo {
+      width: 100%;
+      padding: 1.5em 0;
+    }
+  }
+}

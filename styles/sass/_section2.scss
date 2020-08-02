@@ -1,0 +1,46 @@
+.section2Bg {
+  background-color: #141414;
+}
+
+.section2 {
+  display: flex;
+  align-items: center;
+
+
+  .section2__Info {
+    width: 90%;
+    font-size: 1.25em;
+    margin: 0 2em;
+    line-height: 1.55;
+    color: #FFF;
+
+    p {
+      margin-top: 1.25em;
+      padding: .8em .1em;
+      margin-bottom: 2em;
+    }
+  }
+
+  .section2__Image {
+    width: 50%;
+    height: auto;
+    clip-path: circle(40%);
+
+    img {
+      width: 100%;
+      height: auto;
+      
+      
+
+    }
+
+  }
+}
+
+@media screen and (max-width:768px) {
+  .section2 {
+    flex-direction: column;
+
+
+  }
+}

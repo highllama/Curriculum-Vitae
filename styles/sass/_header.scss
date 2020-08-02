@@ -1,0 +1,145 @@
+$mainBlue: #0066ff;
+
+header {
+  width: 100%;
+  padding-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  font-size: 1.25em;
+
+  ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+    li {
+      margin: 0 2em;
+    }
+  }
+
+  a {
+    color: #fff;
+
+    text-decoration: none;
+
+    &:hover {
+      cursor: pointer;
+      color: $mainBlue;
+    }
+  }
+
+
+}
+
+.mainBackground {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), 50%, rgba(0, 0, 0, 0.1) 100%);
+  // background-position: center center;
+  // background-size: cover;
+  // background-attachment: fixed;
+  height: 100vh;
+
+  .waves {
+
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    opacity: .5;
+
+    .wave1 {
+      position: absolute;
+      bottom: 0;
+      left: -500px;
+      width: 2000px;
+      height: 427px;
+      background-image: url(../imgs/waves.png);
+      background-position: center bottom;
+      background-size: 2402px auto;
+      background-repeat: no-repeat;
+      animation: wave 4s infinite alternate ease-in-out;
+      will-change: auto;
+
+
+    }
+
+    .wave2 {
+      position: absolute;
+      bottom: 0;
+      left: -500px;
+      width: 2000px;
+      height: 427px;
+      background-image: url(../imgs/waves.png);
+      background-position: center -427px;
+      background-size: 2402px auto;
+      background-repeat: no-repeat;
+      animation: wave 4s infinite alternate ease-in-out;
+      animation-delay: 1s;
+      will-change: auto;
+
+    }
+
+    .wave3 {
+      position: absolute;
+      bottom: 0;
+      left: -500px;
+      width: 2000px;
+      height: 427px;
+      background-image: url(../imgs/waves.png);
+      background-position: center 0px;
+      background-size: 2402px auto;
+      background-repeat: no-repeat;
+      animation: wave 4s infinite alternate ease-in-out;
+      animation-delay: 2.2s;
+      will-change: auto;
+
+    }
+  }
+
+
+}
+
+.bgWrapper {
+  display: flex;
+  align-items: center;
+  color: #FFf;
+  text-align: center;
+  height: 100vh;
+
+
+
+  .bgLeftSide__Description {
+    margin-bottom: 1em;
+    height: 100%;
+
+    h1 {
+      margin-top: .3em;
+      font-size: 4rem;
+    }
+
+    h4 {
+      font-size: 1.7rem;
+    }
+
+    p {
+      margin-top: 1.5em;
+      font-weight: 100;
+      font-size: 1.5em;
+    }
+  }
+}
+
+
+@keyframes wave {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(200px, 125px);
+  }
+}
