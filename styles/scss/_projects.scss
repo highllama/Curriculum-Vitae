@@ -1,0 +1,66 @@
+
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &-image{
+    width: 45%;
+    height: 45vh;
+    overflow-y: scroll;
+    box-shadow: -20px 20px 25px 5px rgba(0,0,0, .25);
+    border-radius: 25px;
+    
+
+    img {
+      width: 100%;
+    }
+
+    &::-webkit-scrollbar{
+      display: none;
+    }
+    
+  }
+
+  &-info {  
+    width: 45%;
+
+    p{
+      width: 70%;
+    }
+  }
+
+  &:nth-of-type(odd){
+    flex-direction: row-reverse;
+  }
+}
+
+
+.project-others{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &-item-image{
+    height: 45vh;
+    min-height: 45vh;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar{
+      display: none;
+    }
+  }
+
+  &-item{
+    width: 45%;
+    margin: 5em 0;
+
+    img{
+      object-fit: contain;
+      width: 100%;
+    }
+  }
+
+}

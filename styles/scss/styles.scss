@@ -1,0 +1,40 @@
+@import 'vars';
+@import 'header';
+@import 'hero';
+@import 'whoAmI';
+@import 'skills';
+@import 'animations';
+@import 'projects';
+
+
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html{
+   scroll-behavior: smooth;
+}
+
+
+body {
+   background: #182433; 
+   color: #FFF;
+   font-size: 16px;
+   font-family: 'Raleway', sans-serif;
+}
+
+strong {
+   color: $mainColor;
+}
+
+p{
+   line-height: 1.5;
+}
+
+a{
+   text-decoration: none;
+   color: inherit;
+}

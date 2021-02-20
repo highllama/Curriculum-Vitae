@@ -1,0 +1,38 @@
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+        font-size: clamp(14px,6.25vw,8rem);
+        color: white;
+        margin-top: 0;
+        line-height: 1;
+    }
+
+    p{
+        max-width: 70%;
+        line-height: 1.5;
+        opacity: .799;
+        margin-top: -1em;
+
+    }
+
+    code{
+        color: $mainColor;
+    }
+
+    &__text{
+        width: 50%;
+    }
+
+    &__code {
+        overflow: hidden;
+        width: 40%;
+        margin: 0 auto;
+        font-size: 4em;
+    }
+}
+
