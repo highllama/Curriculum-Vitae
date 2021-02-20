@@ -1,432 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
-    />
-    <title>CURRICULUM VITAE</title>
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/d370445269.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <!-- -------------------- MAIN BACKGROUND---------------------- -->
-    <main class="mainBackground">
-      <div class="header container">
-        <header>
-          <nav>
-            <button id="responsiveHeader"><i class="fas fa-bars"></i></button>
-          </nav>
-          <nav class="mainHeader">
-            <ul>
-              <li><a href="#section2">¿Quién soy?</a></li>
-              <li><a href="#section4">Proyectos</a></li>
-              <li>
-                <button><a href="#contact"> Contacto</a></button>
-              </li>
-            </ul>
-          </nav>
-        </header>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Juan Diego Rodriguez</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
 
-      <div class="bgWrapper container">
-        <div class="bgLeftSide">
-          <div class="bgLeftSide__Description">
-            <h4 class="blueText openSans400">Desarrollador Web</h4>
-            <h1 class="raleway700">Juan Diego Rodriguez</h1>
-            <p class="openSans400">
-              Desarrollador junior enfocado al Front-end, cuento con
-              conocimietos de <strong> HTML</strong>, <strong>CSS</strong>,
-              <strong>JavaScript</strong>, <strong>Git</strong>,
-              <strong>Sass</strong>
-              y algunas librerías relacionadas, como lo son
-              <strong> React </strong>, manejo muy bien el idioma
-              <strong>Ingles</strong> y la Comunicacion es uno de mis mayores
-              fuertes
-            </p>
-          </div>
+<body>
+
+    <header class="wrapper">
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="#who-am-i">Quien soy?</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li>
+                        <button class="btn">
+                            Contacto
+                        </button>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <div class="waves">
-          <div class="wave1"></div>
-          <div class="wave2"></div>
-          <div class="wave3"></div>
+    </header>
+
+<!--
+|-------------------------------------------------|
+|-------------- Hero ------------------|
+|-------------------------------------------------|
+-->
+
+    <main>
+        <div class="hero wrapper">
+            <div class="hero__text">
+                <h2 class="mainColor fz-2">WEB DEVELOPER</h2>
+                <h1>
+                    Juan Diego <br> Rodriguez
+                </h1>
+                <p class="jetBrains fz-1">Desarrollador web enfocado al Front-end, cuento con conocimietos de <strong>
+                        HTML
+                </strong>, <strong>
+                        CSS
+                    </strong>, <strong>JavaScript</strong>, <strong>Git</strong>, <strong>Sass</strong> y librerías
+                    relacionadas,
+                    como lo son <strong>React</strong> , manejo muy bien el idioma <strong>Ingles</strong> y la
+                    Comunicacion es uno
+                    de mis mayores fuertes.
+                </p>
+            </div>
+            <div class="hero__code">
+                <pre class="fz-5" id="heroCode1" >
+                </pre> 
+            </div>
         </div>
-      </div>
-      
+
+        <div class="social_links">
+            <div>
+                <a href="https://www.linkedin.com/in/juan-diego-rodriguez-3a981a1a7" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/highllama" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div>
+                <a href="tel:3138726918">
+                    <i class="fas fa-phone-alt"></i>
+                </a>
+            </div>
+            <div>
+                <a href="mailto:juanaviator@hotmail.com">
+                    <i class="far fa-envelope"></i>
+                </a>
+            </div>
+        </div>
     </main>
 
-    <!-- ------------------------ SECTION 2 -------------------------- -->
-
-    <section class="section2Bg">
-      <div id="section2" class="section2 container">
-        <div class="section2__Image">
-          <img loading="lazy" src="./imgs/me.png" alt="me" />
+<!--
+|-------------------------------------------------|
+|-------------- quien soy? ------------------|
+|-------------------------------------------------|
+-->
+    <section id="who-am-i">
+        <div class="who-am-i">
+            <div class="wrapper">
+                <div class="who-am-i-content ">
+                    <h2 class="fz-4">Quien Soy?</h2>
+                    <p class="fz-1 jetBrains mt-4 op-medium">Actualmente soy un estudiante de ingeniería de sistemas de la universidad de Cundinamarca, tengo 18 años y resido en la ciudad de Fusagasugá, Cundinamarca, desde muy pequeño me encanta el desarrollo web y los idiomas, habilidades que he perfeccionado a lo largo del tiempo. Soy una persona bastante responsable, comprometida y en especial me gusta aprender cosas nuevas todos los días.</p>
+                </div>
+            </div>
         </div>
-        <div class="section2__Info">
-          <div>
-            <h2 class="blueText raleway400">¿Quién Soy?</h2>
-            <p class="openSans400">
-              actualmente soy un estudiante de ingeniería de sistemas de la
-              universidad de Cundinamarca, tengo 18 años y resido en la ciudad
-              de Fusagasugá, Cundinamarca, desde muy pequeño me encanta el
-              desarrollo web y los idiomas, habilidades que he perfeccionado a
-              lo largo del tiempo. Soy una persona bastante responsable,
-              comprometida y en especial me gusta aprender cosas nuevas todos
-              los días
-            </p>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <!-- ------------------------SECTION 3 skills------------------------------- -->
+<!--
+|-------------------------------------------------|
+|-------------- Skills ------------------|
+|-------------------------------------------------|
+-->
 
-    <div class="section__Title container">
-      <h2 class="raleway700">Habilidades</h2>
-    </div>
+    <section class="wrapper mt-5">
+        <div class="skills">
+            <h2 class="fz-4 mt-2">Habilidades</h2>
 
-    <section class="section3 container">
-      <div class="section3__Container">
-        <i class="fas fa-laptop-code"></i>
-        <h2 class="raleway700">Front-end</h2>
-        <p>
-          El <strong>desarrollo</strong> y <strong>maquetación</strong> son mi
-          principal fuerte, Somos aliados desde hace mucho tiempo!
-        </p>
-      </div>
+            <div class="skills-items mt-4-5">
 
-      <div class="section3__Container">
-        <i class="fab fa-react"></i>
-        <h2 class="raleway700">React</h2>
-        <p>
-          React se ha convertido en uno de mis mejores <b>aliados</b> 
-          aparte de esto nos conocemos hace bastante!        
-        </p>
-      </div>
+                <div class="skills-item">
+                    <i class="fz-1 fas fa-laptop-code"></i>
+                    <h3 class="fz-1-25 mt-2">Front End</h3>
+                    <p class="fz-1 op-medium mt-2-5">
+                        El desarrollo y maquetación son mi principal fuerte, Somos aliados desde hace mucho tiempo!
+                    </p>
 
-      <div class="section3__Container">
-        <i class="far fa-comment"></i>
-        <h2 class="raleway700">Comunicación</h2>
-        <p>
-          La Comunicación es la base fundamental de todo. El
-          <strong>
-            Inglés
-          </strong>
-          y yo nos conocemos hace más de 3 años!
-        </p>
-      </div>
+                </div>
+                <div class="skills-item">
+                    <i class="fab fa-react"></i>
+                    <h3 class="fz-1-25 mt-2">React</h3>
+                    <p class="fz-1 op-medium mt-2-5">
+                        React se ha convertido en uno de mis mejores aliados aparte de esto nos conocemos hace bastante!
+                    </p>
+    
+                </div>
+                <div class="skills-item">
+                    <i class="far fa-comment"></i>
+                    <h3 class="fz-1-25 mt-2">Comunicacion</h3>
+                    <p class="fz-1 op-medium mt-2-5">
+                        La Comunicación es la base fundamental de todo. El Inglés y yo nos conocemos hace más de 3 años!
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
     </section>
 
-    <!-- --------------------------SECTION 4--------------------------------->
-    <!-- ------------------------OTHER PROJECTS-------------------------->
+<!--
+|-------------------------------------------------|
+|-------------- proyects ------------------|
+|-------------------------------------------------|
+-->
 
-    <div id="section4" class="container section__Title">
-      <h2 class="raleway700">Proyectos</h2>
-    </div>
-
-    <div class="container">
-      <section class="otherProjects">
-        <div class="secondaryGrid">
-
-          <div class="secondaryProject">
-            <div class="secondaryProjectImage">
-              <a href="https://ip-tracker-leaflet.herokuapp.com/" target="_blank"
-                ><img loading="lazy" src="./imgs/projects/ip-tracker.png" alt="ip tracker"
-              /></a>
-            </div>
-            <div class="secondaryProjectInfo">
-              <h3 class="blueText raleway700">
-                Rastreador de IP
-              </h3>
-              <p class="openSans400">
-                un proyecto de  <a href="https://www.frontendmentor.io/" target="_blank">
-                  Frontendmentor</a
-                > construido en React y Redux, consume una API publica y esta desplegado en heroku 
-              </p>
-            </div>
-          </div>
-          
-          <div class="secondaryProject">
-            <div class="secondaryProjectImage">
-              <a href="https://covid-global-dashboard.herokuapp.com/" target="_blank"
-                ><img loading="lazy" src="./imgs/projects/covid-global-dashboard.png" alt="covid-global-dashboard"
-              /></a>
-            </div>
-            <div class="secondaryProjectInfo">
-              <h3 class="blueText raleway700">
-                Covid-19 Dashboard
-              </h3>
-              <p class="openSans400">
-                sencillo pero util tablero visualizador de casos de coronavirus. construido en su totalidad utilizando
-                React y Redux. integra una vista global y tambien un filtrado por paises
-              </p>
-            </div>
-          </div>
-          
-          <div class="secondaryProject">
-            <div class="secondaryProjectImage">
-              <a href="https://react-test-npx.herokuapp.com/" target="_blank"
-                ><img loading="lazy" src="./imgs/projects/rest-countries-api.png" alt="covid-global-dashboard"
-              /></a>
-            </div>
-            <div class="secondaryProjectInfo">
-              <h3 class="blueText raleway700">
-                Countries API
-              </h3>
-              <p class="openSans400">
-                Hace parte de uno de los retos
-                de
-                <a href="https://www.frontendmentor.io/" target="_blank">
-                  Frontendmentor</a
-                >
-                Tambien esta construido en su totalidad con React y Redux
-              </p>
-            </div>
-          </div>
-
-          <div class="secondaryProject">
-            <div class="secondaryProjectImage">
-              <a href="https://highllama.github.io/Fylo/" target="_blank"
-                ><img loading="lazy" src="./imgs/projects/Fylo.png" alt="Fylo"
-              /></a>
-            </div>
-            <div class="secondaryProjectInfo">
-              <h3 class="blueText raleway700">
-                Fylo
-              </h3>
-              <p class="openSans400">
-                Una moderna y bella Landing Page, Hace parte de uno de los retos
-                de
-                <a href="https://www.frontendmentor.io/" target="_blank">
-                  Frontendmentor</a
-                >
-                su diseño es prácticamente igual al original, y tambien cuenta
-                con su diseño responsive
-              </p>
-            </div>
-          </div>
-          
-          <div class="secondaryProject">
-            <div class="secondaryProjectImage">
-              <a href="https://highllama.github.io/Monograph/" target="_blank"
-                ><img
-                  loading="lazy"
-                  src="./imgs/projects/Monograph.png"
-                  alt="Monograph"
-              /></a>
-            </div>
-            <div class="secondaryProjectInfo">
-              <h3 class="blueText raleway700">
-                Monograph
-              </h3>
-              <p class="openSans400">
-                Monograph es otro proyecto de
-                <a href="https://www.frontendmentor.io/" target="_blank">
-                  Frontendmentor</a
-                >, es una sencilla landing page con una paleta de colores
-                bastante genial
-              </p>
-            </div>
-          </div>
-
-          <div class="secondaryProject">
-            <div class="secondaryProjectImage">
-              <a href="https://highllama.github.io/Manage/" target="_blank"
-                ><img
-                  loading="lazy"
-                  src="./imgs/projects/Manage.png"
-                  alt="Manage"
-              /></a>
-            </div>
-            <div class="secondaryProjectInfo">
-              <h3 class="blueText raleway700">
-                Manage
-              </h3>
-              <p class="openSans400">
-                Manage es otro proyecto del ya mencionado
-                <a href="https://www.frontendmentor.io/" target="_blank">
-                  Frontendmentor</a
-                >, ella integra un slider automático, su diseño es moderno.
-                También cuenta con su respectivo diseño responsive
-              </p>
-            </div>
-          </div>
-
-          <div class="secondaryProject">
-            <div class="secondaryProjectImage">
-              <a href="https://highllama.github.io/Hazze/" target="_blank"
-                ><img
-                  loading="lazy"
-                  src="./imgs/projects/Hazze.png"
-                  alt="Hazze"
-              /></a>
-            </div>
-            <div class="secondaryProjectInfo">
-              <h3 class="blueText raleway700">
-                Hazze
-              </h3>
-              <p class="openSans400">
-                Hazze es una landing page con un diseño minimalista pero
-                impecable, aunque el diseño e imágenes fueron tomados de un
-                témplate, la maquetación, estilización y adaptación responsive
-                si fueron realizadas en su totalidad por mí, Hazze también es la
-                inspiradora de este C.V
-              </p>
-            </div>
-          </div>
-
-          <div class="secondaryProject">
-            <div class="secondaryProjectImage">
-              <a href="https://highllama.github.io/nextFilm/" target="_blank"
-                ><img
-                  loading="lazy"
-                  src="./imgs/projects/NextFilm.png"
-                  alt="NetFlixP"
-              /></a>
-            </div>
-            <div class="secondaryProjectInfo">
-              <h3 class="blueText raleway700">
-                NextFilm
-              </h3>
-              <p class="openSans400">
-                una main page sencilla pero con un gran potencial de desarrollo
-                y escalabilidad, esta basada en NetFlix como su nombre lo
-                indica.
-              </p>
-              
-            </div>
-          </div>
-
-          <div class="secondaryProject">
-            <div class="secondaryProjectImage">
-              <a href="https://highllama.github.io/Bookmarks/" target="_blank"
-                ><img
-                  loading="lazy"
-                  src="./imgs/projects/bookmarks.png"
-                  alt="bookmarks"
-              /></a>
-            </div>
-            <div class="secondaryProjectInfo">
-              <h3 class="blueText raleway700">
-                Bookmarks
-              </h3>
-              <p class="openSans400">
-                bookmarks es una landing page mas elaborada, tambien es un reto de <a href="https://www.frontendmentor.io/" target="_blank">
-                  Frontendmentor</a
-              </p>
-            </div>
-          </div>
-
-          <div class="secondaryProject">
-            <div class="secondaryProjectImage">
-              <a
-                href="https://highllama.github.io/COPIA-U.cundinamarca/"
-                target="_blank"
-                ><img
-                  src="./imgs/projects/Ucundinamarca.png"
-                  alt="Ucundinamarca"
-                  loading="lazy"
-              /></a>
-            </div>
-            <div class="secondaryProjectInfo">
-              <h3 class="blueText raleway700">
-                COPIA U. Cundinamarca
-                
-              </h3>
-              <p class="openSans400">
-                Este fue mi primer proyecto personal, en el que decidi recrear
-                la pagina principal de la Universidad de Cundinamarca, aunque no
-                es en su totalidad responsive, su diseño es casi identico
-              </p>
-            </div>
-          </div>
-
-          <div class="secondaryProject">
-            <div class="secondaryProjectImage">
-              <a href="https://highllama.github.io/Xplore/" target="_blank"
-                ><img
-                  loading="lazy"
-                  src="./imgs/projects/Xplore.jpg"
-                  alt="Xplore"
-              /></a>
-            </div>
-            <div class="secondaryProjectInfo">
-              <h3 class="blueText raleway700">
-                Xplore
-              </h3>
-              <p class="openSans400">
-                Este es mi primer sitio web desarrollado en su totalidad por mi,
-                su diseño, maquetación y estilización son totalmente de mi
-                autoria
-              </p>
-            </div>
-          </div>
-
-          <div class="secondaryProject">
-            <div class="secondaryProjectImage">
-              <a href="https://highllama.github.io/Mat-Fruit/" target="_blank"
-                ><img
-                  loading="lazy"
-                  src="./imgs/projects/Mat-Fruit.png"
-                  alt="Ucundinamarca"
-              /></a>
-            </div>
-            <div class="secondaryProjectInfo">
-              <h3 class="blueText raleway700">
-                Mat-Fruit
-              </h3>
-              <p class="openSans400">
-                Esta es una sencilla pagina web desarrollada para un pequeño
-                proyecto universitario, el cual consiste en la creacion de un
-                videojuego o "software educativo" que contribuya a la enseñanza
-              </p>
-            </div>
-          </div>
+    <section class="wrapper mt-5" id="projects">
+        <div class="projects-head">
+            <h2 class="mt-2 fz-4">Proyectos</h2>
         </div>
-      </section>
-    </div>
 
-    <!-- --------------------CONTACT SECTION------------------------ -->
-
-    <footer>
-      <div class="container">
-        <div id="contact" class="section__Title">
-          <h2>Contacto</h2>
+        <div class="project mt-5">
+            <div class="project-image">
+                <a href="https://ip-tracker-leaflet.herokuapp.com/" target="_blank">
+                    <img src="./assets/projects/ip-tracker.png" alt=" project image">
+                </a>
+            </div>
+            <div class="project-info">
+                <h2 class="fz-3 mainColor">Rastreador de IP</h2>
+                <p class="op-medium mt-2 jetBrains">
+                    un proyecto de Frontendmentor construido en React y Redux, consume una API publica y esta desplegado en heroku
+                </p>
+                <h3 class="mainColor fw-400 mt-1">REDUX &nbsp;REACT &nbsp; HTML &nbsp;CSS&nbsp; JS</h3>
+            </div>
         </div>
-        <div class="contactSection">
-          <a
-            href="https://www.linkedin.com/in/juan-diego-rodriguez-3a981a1a7"
-            target="_blank"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/juan_diegoro/?hl=es-la"
-            target="_blank"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a href="https://github.com/highllama" target="_blank"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="mailto:juanaviator@hotmail.com"
-            ><i class="far fa-envelope"></i></a
-          ><br />
-          <div class="phoneNumber">
-            <a href=" tel:3138726918"><i class="fas fa-phone-alt"></i></a
-            ><span>+57 3138726918</span>
-          </div>
+       
+        <div class="project mt-5">
+            <div class="project-image">
+                <a href="https://covid-global-dashboard.herokuapp.com/" target="_blank">
+                    <img src="./assets/projects/covid-global-dashboard.png" alt="project image">
+                </a>
+            </div>
+            <div class="project-info">
+                <h2 class="fz-3 mainColor">Covid Dashboard</h2>
+                <p class="op-medium mt-2 jetBrains">
+                    sencillo pero util tablero visualizador de casos de coronavirus. construido en su totalidad utilizando React y Redux. integra una vista global y tambien un filtrado por paises.
+                </p>
+                <h3 class="mainColor fw-400 mt-1">REDUX &nbsp;REACT &nbsp; HTML &nbsp;CSS&nbsp; JS</h3>
+            </div>
         </div>
-      </div>
-    </footer>
+        
+        <div class="project mt-5">
+            <div class="project-image">
+                <a href="https://highllama.github.io/Fylo/" target="_blank">
+                    <img src="./assets/projects/Fylo.png" alt="project image">
+                </a>
+            </div>
+            <div class="project-info">
+                <h2 class="fz-3 mainColor">Fylo</h2>
+                <p class="op-medium mt-2 jetBrains">
+                    Una moderna y bella Landing Page, Hace parte de uno de los retos de Frontendmentor su diseño es prácticamente igual al original, y tambien cuenta con su diseño responsive.
+                </p>
+                <h3 class="mainColor fw-400 mt-1">HTML &nbsp;CSS&nbsp; JS</h3>
+            </div>
+            
+            
+            
+            
+            
+            
+        </div>
+        
+        
+        
+    </section>
+    <section>
+        <h2 class="text-center fz-4 mt-5">Otros Proyectos</h2>
+        <div class="project-others wrapper mt-4" >
 
-    <script src="script.js"></script>
-  </body>
+            
+            <div class="project-others-item">
+                <a href="https://react-test-npx.herokuapp.com/" target="_blank">
+                    <div class="project-others-item-image">
+                        <img src="./assets/projects/rest-countries-api.png" alt="other project">
+                    </div>
+                </a>
+                <h2 class="mt-1 fz-2">Countries API</h2>
+                <p class="op-medium mt-1">Hace parte de uno de los retos de Frontendmentor Tambien esta construido en su totalidad con React y Redux</p>
+                <h3 class="mainColor fw-400 mt-1">HTML &nbsp;CSS&nbsp; JS</h3>
+            </div>
+            
+            <div class="project-others-item">
+                <a href="https://highllama.github.io/Monograph/" target="_blank">
+                    <div class="project-others-item-image">
+                        <img src="./assets/projects/Monograph.png" alt="other project">
+                    </div>
+                </a>
+                <h2 class="mt-1 fz-2">Monograph</h2>
+                <p class="mt-1 op-medium">Monograph es otro proyecto de Frontendmentor, es una sencilla landing page con una paleta de colores bastante genial</p>
+                <h3 class="mainColor fw-400 mt-1">HTML &nbsp;CSS&nbsp; JS</h3>
+            </div>
+            
+            <div class="project-others-item">
+                <a href="https://highllama.github.io/Manage/" target="_blank">
+                    <div class="project-others-item-image">
+                        <img src="./assets/projects/Manage.png" alt="other project">
+                    </div>
+                </a>
+                <h2 class="mt-1 fz-2">Manage</h2>
+                <p class="mt-1 op-medium">Manage es otro proyecto del ya mencionado Frontendmentor, ella integra un slider automático, su diseño es moderno. También cuenta con su respectivo diseño responsive</p>
+                <h3 class="mainColor fw-400 mt-1">HTML &nbsp;CSS&nbsp; JS</h3>
+            </div>
+
+            <div class="project-others-item">
+                <a href="https://highllama.github.io/Hazze/" target="_blank">
+                    <div class="project-others-item-image">
+                        <img src="./assets/projects/Hazze.png" alt="other project">
+                    </div>
+                </a>
+                <h2 class="mt-1 fz-2">Hazze</h2>
+                <p class="mt-1 op-medium">Hazze es una landing page con un diseño minimalista pero impecable, aunque el diseño e imágenes fueron tomados de un témplate, la maquetación, estilización y adaptación responsive si fueron realizadas en su totalidad por mí, Hazze también es la inspiradora de este C.V</p>
+                <h3 class="mainColor fw-400 mt-1">HTML &nbsp;CSS&nbsp; JS</h3>
+            </div>
+
+            <div class="project-others-item">
+                <a href="https://highllama.github.io/nextFilm/" target="_blank">
+                    <div class="project-others-item-image">
+                        <img src="./assets/projects/NextFilm.png" alt="other project">
+                    </div>
+                </a>
+                <h2 class="mt-1 fz-2">NextFilm</h2>
+                <p class="mt-1 op-medium">una main page sencilla pero con un gran potencial de desarrollo y escalabilidad, esta basada en NetFlix como su nombre lo indica.
+                </p>
+                <h3 class="mainColor fw-400 mt-1">HTML &nbsp;CSS&nbsp; JS</h3>
+            </div>
+
+            <div class="project-others-item">
+                <a href="https://highllama.github.io/Bookmarks/" target="_blank">
+                    <div class="project-others-item-image">
+                        <img src="./assets/projects/bookmarks.png" alt="other project">
+                    </div>
+                </a>
+                <h2 class="mt-1 fz-2">Bookmarks</h2>
+                <p class="mt-1 op-medium">bookmarks es una landing page mas elaborada, tambien es un reto de Frontendmentor</p>
+                <h3 class="mainColor fw-400 mt-1">HTML &nbsp;CSS&nbsp; JS</h3>
+            </div>
+
+            <div class="project-others-item">
+                <a href="https://highllama.github.io/COPIA-U.cundinamarca/" target="_blank">
+                    <div class="project-others-item-image">
+                        <img src="./assets/projects/Ucundinamarca.png" alt="other project">
+                    </div>
+                </a>
+                <h2 class="mt-1 fz-2">COPIA U. Cundinamarca</h2>
+                <p class="mt-1 op-medium">ste fue mi primer proyecto personal, en el que decidi recrear la pagina principal de la Universidad de Cundinamarca, aunque no es en su totalidad responsive, su diseño es casi identico
+                </p>
+                <h3 class="mainColor fw-400 mt-1">HTML &nbsp;CSS&nbsp; JS</h3>
+            </div>
+            
+            <div class="project-others-item">
+                <a href="https://highllama.github.io/Xplore/" target="_blank">
+                    <div class="project-others-item-image">
+                        <img src="./assets/projects/Xplore.jpg" alt="other project">
+                    </div>
+                </a>
+                <h2 class="mt-1 fz-2">Xplore</h2>
+                <p class="mt-1 op-medium">Este es mi primer sitio web desarrollado en su totalidad por mi, su diseño, maquetación y estilización son totalmente de mi autoria</p>
+                <h3 class="mainColor fw-400 mt-1">HTML &nbsp;CSS&nbsp; JS</h3>
+            </div>
+            
+            <div class="project-others-item">
+                <a href="https://highllama.github.io/Mat-Fruit/" target="_blank">
+                    <div class="project-others-item-image">
+                        <img src="./assets/projects/Mat-Fruit.png" alt="other project">
+                    </div>
+                </a>
+                <h2 class="mt-1 fz-2">Mat-Fruit</h2>
+                <p class="mt-1 op-medium">Esta es una sencilla pagina web desarrollada para un pequeño proyecto universitario, el cual consiste en la creacion de un videojuego o "software educativo" que contribuya a la enseñanza</p>
+                <h3 class="mainColor fw-400 mt-1">GODOT &nbsp; C++</h3>
+            </div>
+    
+        </div>
+    </section>
+    
+
+    <script src="./js/typewritter.js" defer></script>
+    <script src="./js/skills.js" defer></script>
+    <script src="https://kit.fontawesome.com/d370445269.js" crossorigin="anonymous" defer></script>
+</body>
+
 </html>

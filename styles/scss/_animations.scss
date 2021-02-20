@@ -1,0 +1,22 @@
+
+$rotation: 5deg;
+
+
+@keyframes tilt {
+  0%{
+    transform: rotate($rotation);
+  }
+  25%{
+    transform: rotate(-$rotation);
+  }
+  50%{
+    transform: rotate($rotation);
+  }
+  75%{
+    transform: rotate(-$rotation);
+  }
+  100%{
+    transform: rotate($rotation);
+  }
+}
+

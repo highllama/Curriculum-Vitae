@@ -1,0 +1,61 @@
+$mainColor: #3AFFCA;
+
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+.mainColor{
+    color: $mainColor;
+}
+
+.jetBrains {
+    font-family: 'jetbrains mono', sans-serif;
+}
+
+.btn{
+    padding: 1em 1.25em;
+    background: transparent;
+    border: 1px solid $mainColor;
+    color: $mainColor;
+}
+
+
+.fw-400 {
+    font-weight: 400;
+}
+
+
+.op-medium{
+    opacity:.799;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+@for $i from 1 through 5{
+    .fz-#{$i}{
+        font-size: clamp(12px,$i * 0.84vw,$i * 1rem);
+    }
+    
+    .fz-#{$i}-25{
+        font-size: clamp(13px,$i * 1.045vw,$i * 1.25rem);
+    }
+    
+    .fz-#{$i}-5{
+        font-size: clamp(14px,$i * 1.25vw,$i * 1.5rem);
+    }
+
+    .mt-#{$i}{
+        margin-top: $i + 0rem;
+    }
+
+    .mt-#{$i}-5{
+        margin-top: $i + .5rem;
+    }
+
+}
