@@ -36,6 +36,42 @@
 }
 
 
+
+@media screen and (max-width:768px){
+  .project{
+    width: 100%;
+    flex-direction: column;
+
+    &:nth-of-type(odd){
+      flex-direction: column;
+    }
+
+    &-image{
+      height: auto;
+      max-height: 50vh;
+      width: 100%;
+
+      img{
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+
+    &-info{
+      width: 100%;
+      margin-top: 2em;
+
+      p{
+        width: 100%;
+      }
+    }
+  }
+
+}
+
+
+
+
 .project-others{
 
   display: flex;
@@ -60,6 +96,22 @@
     img{
       object-fit: contain;
       width: 100%;
+    }
+  }
+
+}
+
+@media screen and (max-width:768px){
+  .project-others{
+    flex-direction: column;
+    &-item{
+      width: 95%;
+      margin: 2em 0;
+    }
+
+    &-item-image{
+      max-height: 15vh;
+      min-height: 25vh;
     }
   }
 

@@ -45,3 +45,19 @@
     }
   }
 }
+
+@media screen and (max-width:768px){
+  .skills{
+
+    &-items{
+      flex-direction: column;
+    }
+
+    &-item{
+      width: 95%;
+      margin-top: 2em;
+      padding: 1.5em;
+    }
+  }
+
+}

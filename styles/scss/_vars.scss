@@ -1,6 +1,8 @@
 $mainColor: #3AFFCA;
 
-
+.small-show {
+    display: none;
+}
 .wrapper {
     width: 90%;
     margin: 0 auto;
@@ -39,15 +41,15 @@ $mainColor: #3AFFCA;
 
 @for $i from 1 through 5{
     .fz-#{$i}{
-        font-size: clamp(12px,$i * 0.84vw,$i * 1rem);
+        font-size: clamp(12px + $i*2,$i * 0.84vw,$i * 1rem);
     }
     
     .fz-#{$i}-25{
-        font-size: clamp(13px,$i * 1.045vw,$i * 1.25rem);
+        font-size: clamp(15px +$i*2.25,$i * 1.045vw,$i * 1.25rem);
     }
     
     .fz-#{$i}-5{
-        font-size: clamp(14px,$i * 1.25vw,$i * 1.5rem);
+        font-size: clamp(18px + $i * 2.5,$i * 1.25vw,$i * 1.5rem);
     }
 
     .mt-#{$i}{
@@ -57,5 +59,28 @@ $mainColor: #3AFFCA;
     .mt-#{$i}-5{
         margin-top: $i + .5rem;
     }
+
+}
+
+@media screen and (max-width:768px){
+  
+  .fz-1{
+      font-size: 1.15rem;
+  }
+    .fz-2{
+      font-size: 2rem;
+  }
+ 
+
+}
+
+
+@media screen and (max-width:768px){
+  .small-hide{
+      display: none;
+  }
+  .small-show{
+      display: block;
+  }
 
 }

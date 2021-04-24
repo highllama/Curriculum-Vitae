@@ -11,3 +11,25 @@
   }
 
 }
+
+@media screen and (max-width:768px){
+  .who-am-i{
+    background-image: url('../../assets/ME.mobile.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #000;
+
+    &-content{
+      width: 100%;
+      position: relative;
+      top: 25em;
+    }
+
+    &-separator{
+      padding-bottom: 2em;
+      background-color: #000;
+    }
+  }
+
+}
