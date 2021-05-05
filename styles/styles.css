@@ -336,7 +336,7 @@ header {
 
 .who-am-i {
   height: 100vh;
-  background-image: url("/../assets/ME.png");
+  background-image: url("../assets/ME.png");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -346,7 +346,7 @@ header {
 
 @media screen and (max-width: 768px) {
   .who-am-i {
-    background-image: url("/../assets/ME.mobile.png");
+    background-image: url("../assets/ME.mobile.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
